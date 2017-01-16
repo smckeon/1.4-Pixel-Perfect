@@ -1,0 +1,393 @@
+/*
+ * General typography and color pallet
+ */
+body{
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+ /*
+  * Main Layout
+  */
+.container{
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header{
+  position: relative; /* for absolute children */
+  background: #FFF url('https://unsplash.it/1275/524') no-repeat;
+  background-size: cover;
+  height: 523px;
+}
+
+header::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.5);
+}
+
+/* Position these to bring them above overlay */
+header nav, header h1, header h3 {
+  position: relative;
+}
+
+nav {
+  max-width: 1018px;
+  margin: 0 auto;
+
+  padding-right: 02.7504912%;
+}
+
+/* we need to clear the floats! */
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.branding {
+  float: left;
+  margin-top: 6px;
+  margin-left: 14px;
+}
+
+.branding h2 {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 0 2px;
+  letter-spacing: .2px;
+  position: relative;
+  top: -1px;
+}
+
+.branding h2 > span {
+  position: relative;
+  left: -2px;
+  letter-spacing: 0;
+}
+
+.branding h2 > span > span {
+  letter-spacing: -0.7px;
+}
+
+.branding img,
+.branding h2 {
+  vertical-align: middle;
+}
+
+.header-links {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.header-links li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 11px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.header-links li:first-child {
+  position: relative;
+  top: -1px;
+}
+
+.header-links li span {
+  display: inline-block;
+  transform: scaleY(1.5);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.header-links li span,
+.header-links li img {
+  vertical-align: middle;
+}
+
+.header-links li img {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+
+header h1,
+header h4 {
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(17, 52, 79, 1);
+  text-transform: uppercase;
+  margin: 150px 0 0 0;
+
+  font-size: 104px;
+  line-height: 104px;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+header h4 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+/* IDEA:  */ /* IDEA:  */  /* IDEA:  */  /* IDEA:  */  /* IDEA:  */
+
+/* aside css */
+
+.asidecontain{
+  display: inline-block;
+  width: 285px;
+  float: left;
+}
+
+.asidecontain{
+  margin-left: 65px;
+}
+
+.twiphoto{
+  text-align: center;
+}
+
+.twiphoto img{
+  margin-top: 100px;
+  border-radius: 40px;
+}
+
+.twi{
+  margin-bottom: 55px;
+}
+
+.bbimg{
+  text-align: center;
+}
+
+.bbimg a{
+  font-size: 12px;
+  color: #A2B3BE;
+}
+
+.bbimg > span{
+  display: block;
+  text-align: right;
+  margin-bottom: 55px;
+}
+
+.sshhead > h3{
+  color: #006FAE;
+  margin-bottom: 5px;
+}
+
+.sshcontent{
+  color: #B9C6CE;
+}
+
+.sshcontent a{
+  color: #B9C6CE;
+}
+
+
+
+/* body css*/
+
+.bodycontain{
+  display: inline-block;
+  margin-left: 160px;
+  width: 525px;
+  float: left;
+}
+
+.engage {
+  display: inline-block;
+  margin-top: 70px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: #033550;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.amphoto > img{
+  width: 24px;
+  border-radius: 30px;
+}
+
+.amphoto{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.am{
+  display: inline-block;
+  font-size: 12px;
+  color: #006FAE;
+}
+
+.authortext, li, ul{
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 0px;
+}
+
+.bodytext1 a{
+  color: #AEBDC7;
+}
+
+.bodytext2 a:hover{
+  color: #006FAE;
+  font-size: 18px;
+
+}
+
+.woah{
+  padding-left: 10px;
+  font-size: 24px;
+  color: #006FAE;
+  text-transform: uppercase;
+  border-left: 1px solid lightgrey;
+}
+
+.rrs a, i{
+  text-decoration: none;
+  color: white;
+}
+
+.rrs span{
+  padding: 5px 10px 5px 10px;
+  background-color: #9EAEB9;
+}
+
+.rrs span:hover{
+  background-color: #006FAE;
+}
+
+.rrs i{
+  padding: 8px;
+  background-color: #5D686E;
+}
+
+.bodycontent::after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.bodycontent{
+  padding-bottom: 10px;
+}
+
+/* footer css */
+
+.mostpop{
+  font-family: 'Oswald' sans-serif;
+  font-size: 56px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid lightgrey;
+  color: #033550;
+}
+
+.mostpopimages{
+  display: inline-block;
+  position: relative;
+}
+
+.mostpopimages h1{
+  position: absolute;
+  bottom: -12px;
+}
+
+.mostpopimages > div::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.5);
+}
+
+.box1{
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.box2{
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.box3{
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.box4{
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.footer{
+  display: inline-block;
+  width: 1300px;
+  padding-top: 30px;
+  background-color: #033550;
+  color: #A2B3BE;
+}
+
+.footleft{
+  display: flex;
+  align-items: center;
+  float:left;
+  margin-left: 158px;
+  margin-right: 205px;
+  margin-bottom: 45px;
+
+  font-size: 12px;
+}
+
+a.nb{
+  padding-right: 10px;
+  padding-left: 8px;
+  border-right: 1px solid lightgrey;
+  font-size: 12px;
+  text-decoration: none;
+  color: #A2B3BE;
+}
+
+a.nb1{
+  padding-left: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #A2B3BE;
+}
