@@ -365,7 +365,7 @@ header h4 {
 
 .mostpopimages > div:hover::after {
    display: none;
-   }
+}
 
 .mostpopimages > div:hover > h1 {
    color: white;
