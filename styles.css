@@ -1,6 +1,7 @@
 /*
  * General typography and color pallet
  */
+
 body{
   font-family: 'Open Sans', helvetica, sans-serif;
 }
@@ -92,14 +93,21 @@ nav::after {
   list-style: none;
   padding: 0;
   margin: 16px 0 0 0;
+  color: black;
 }
 
+
+.header-links i{
+  color: black;
+  margin-left: 5px;
+}
 .header-links li {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 0 11px;
   text-transform: uppercase;
   font-size: 15px;
+  color: black;
 }
 
 .header-links li:first-child {
@@ -171,6 +179,16 @@ header h4 {
 .twiphoto img{
   margin-top: 100px;
   border-radius: 40px;
+}
+
+.twiam{
+  font-size: 18px;
+  color: #0070AE;
+}
+.twi a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #A0B2BD;
 }
 
 .twi{
@@ -245,9 +263,14 @@ header h4 {
   color: #006FAE;
 }
 
+#hi{
+  text-decoration: underline;
+}
+
 .authortext, li, ul{
   display: inline-block;
   text-decoration: none;
+  color: #AEBDC7;
   padding-left: 0px;
 }
 
@@ -283,6 +306,10 @@ header h4 {
   background-color: #006FAE;
 }
 
+.rrs > span:hover > i{
+   color: black;
+ }
+
 .rrs i{
   padding: 8px;
   background-color: #5D686E;
@@ -315,14 +342,18 @@ header h4 {
 .mostpopimages{
   display: inline-block;
   position: relative;
+  padding-top: 15px;
 }
 
 .mostpopimages h1{
   position: absolute;
   bottom: -12px;
+  width: 250px;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 
-.mostpopimages > div::after{
+/*.mostpopimages > div::after{
   content: '';
   display: block;
   position: absolute;
@@ -331,7 +362,15 @@ header h4 {
   left: 0;
   right: 0;
   background-color: rgba(28, 107, 174, 0.5);
-}
+} */
+
+.mostpopimages > div:hover::after {
+   display: none;
+   }
+
+.mostpopimages > div:hover > h1 {
+   color: white;
+   }
 
 .box1{
   display: inline-block;
@@ -355,14 +394,16 @@ header h4 {
   display: inline-block;
   width: 25%;
   float: left;
+  overflow: hidden;
 }
 
 .footer{
   display: inline-block;
-  width: 1300px;
+  width: 100%;
   padding-top: 30px;
   background-color: #033550;
   color: #A2B3BE;
+
 }
 
 .footleft{
