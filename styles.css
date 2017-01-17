@@ -342,7 +342,6 @@ header h4 {
 .mostpopimages{
   display: inline-block;
   position: relative;
-  padding-top: 15px;
 }
 
 .mostpopimages h1{
@@ -350,19 +349,19 @@ header h4 {
   bottom: -12px;
   width: 250px;
   font-size: 28px;
+  padding-left: 5px;
   text-transform: uppercase;
 }
 
-/*.mostpopimages > div::after{
+.mostpopimages > div::after{
   content: '';
-  display: block;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  width: 315px;
+  height: 330px;
   background-color: rgba(28, 107, 174, 0.5);
-} */
+}
 
 .mostpopimages > div:hover::after {
    display: none;
