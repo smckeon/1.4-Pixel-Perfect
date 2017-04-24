@@ -23,6 +23,7 @@ header{
   background: #FFF url('https://unsplash.it/1275/524') no-repeat;
   background-size: cover;
   height: 523px;
+  width: 100vw;
 }
 
 header::before{
@@ -166,13 +167,12 @@ header h4 {
   display: inline-block;
   width: 285px;
   float: left;
+  margin-left: 5vw;
 }
 
-.asidecontain{
-  margin-left: 65px;
-}
 
 .twiphoto{
+  position: relative;
   text-align: center;
 }
 
@@ -229,7 +229,7 @@ header h4 {
 
 .bodycontain{
   display: inline-block;
-  margin-left: 160px;
+  margin-left: 10vw;
   width: 525px;
   float: left;
 }
@@ -358,6 +358,8 @@ header h4 {
   position: absolute;
   top: 0;
   bottom: 0;
+  /*width: 24.705882352941%;
+  height: 25.882352941176%;*/
   width: 315px;
   height: 330px;
   background-color: rgba(28, 107, 174, 0.5);
