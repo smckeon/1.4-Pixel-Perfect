@@ -14,7 +14,7 @@ h1, h2, h3{
   * Main Layout
   */
 .container{
-  width: 1300px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -222,8 +222,6 @@ header h4 {
 .sshcontent a{
   color: #B9C6CE;
 }
-
-
 
 /* body css*/
 
