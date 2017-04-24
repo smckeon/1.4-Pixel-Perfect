@@ -167,7 +167,7 @@ header h4 {
   display: inline-block;
   width: 285px;
   float: left;
-  margin-left: 5vw;
+  margin-left: 1vw;
 }
 
 
@@ -229,7 +229,7 @@ header h4 {
 
 .bodycontain{
   display: inline-block;
-  margin-left: 10vw;
+  margin-left: 14vw;
   width: 525px;
   float: left;
 }
@@ -339,7 +339,7 @@ header h4 {
   color: #033550;
 }
 
-.mostpopimages{
+.box{
   display: inline-block;
   position: relative;
 }
@@ -353,7 +353,7 @@ header h4 {
   text-transform: uppercase;
 }
 
-.mostpopimages > div::after{
+.box > img::after{
   content: '';
   position: absolute;
   top: 0;
@@ -365,33 +365,33 @@ header h4 {
   background-color: rgba(28, 107, 174, 0.5);
 }
 
-.mostpopimages > div:hover::after {
+.box > img:hover::after {
    display: none;
 }
 
-.mostpopimages > div:hover > h1 {
+.box:hover > h1 {
    color: white;
    }
 
-.box1{
+.box{
   display: inline-block;
   width: 25%;
   float: left;
 }
 
-.box2{
+.box{
   display: inline-block;
   width: 25%;
   float: left;
 }
 
-.box3{
+.box{
   display: inline-block;
   width: 25%;
   float: left;
 }
 
-.box4{
+.box{
   display: inline-block;
   width: 25%;
   float: left;
